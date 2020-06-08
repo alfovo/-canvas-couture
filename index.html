@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <title>Today in Canvas Couture</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1>Today in Canvas Couture</h1>
+
+    <div class="grid-wrapper">
+      <div class="grid-item">
+        <img style="width: 300px;" src="mona_lisa.svg" />
+      </div>
+      <div class="grid-item">
+        <object type="image/svg+xml" data="washington.svg"></object>
+      </div>
+      <div class="grid-item">
+        <button class="button-moving" onclick="initiateCurse()">
+          <h4>DO NOT PRESS</h4>
+        </button>
+      </div>
+      <div class="grid-item">
+        <div class="slipKnot-terminal">
+          <div class="columns" style="background-color: #fff; color: #141414;">
+            <li style="margin-left: 5px;">13 FEB 95</li>
+            <li>FAIRFAX COUNTY LIBRARY SYSTEM</li>
+            <li style="margin-right: 5px;">5:25pm</li>
+          </div>
+
+          <p
+            style="
+              background-color: #fff;
+              color: #141414;
+              margin-top: 0;
+              text-align: center;
+            "
+          >
+            Dial pac
+          </p>
+          <li>
+            Welcome to the InfoNet.
+          </li>
+          <li>
+            Please try our new search methods.
+          </li>
+          <li>
+            Select a number to begin your search.
+          </li>
+          <div class="columns">
+            <ul>
+              <li>
+                1. Title
+              </li>
+              <li>
+                2. Author
+              </li>
+              <li>
+                3. Subject
+              </li>
+              <li>
+                4. Keyword
+              </li>
+              <li>
+                5. Series
+              </li>
+              <li>
+                6. Publisher
+              </li>
+              <li>
+                7. Number of Searches
+              </li>
+            </ul>
+            <ul>
+              <li>
+                8. Review Patron Record
+              </li>
+              <li>
+                9. Print Saved Bibliography
+              </li>
+              <li>
+                10. Community Resources
+              </li>
+              <li>
+                11. American Heritage Dictionary
+              </li>
+              <li>
+                12. National Newspaper Index
+              </li>
+              <li>
+                13. Internet Gateway/Periodical Index
+              </li>
+              <li>
+                14. Logoff
+              </li>
+            </ul>
+          </div>
+          <div
+            class="columns"
+            style="
+              background-color: #fff;
+              color: #141414;
+              text-align: left;
+              width: 250px;
+            "
+          >
+            <li style="margin-left: 5px;">
+              Enter your selection(s) and press &ltEnter&gt:
+            </li>
+            <svg
+              viewBox="0 0 100 100"
+              width="10px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <style>
+                rect {
+                  animation: blink 1.75s linear infinite;
+                }
+                @keyframes blink {
+                  0% {
+                    fill: none;
+                  }
+                  100% {
+                    fill: #141414;
+                  }
+                }
+              </style>
+              <rect width="50%" height="100%" fill="#141414" />
+            </svg>
+          </div>
+          <p style="text-align: left;">
+            Commands: S = Shortcut on, BB = Bulletin Board, ? = Help
+          </p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="documentation">
+          <div style="background-color: #20232a; color: white; padding: 20px;">
+            <h2 style="margin: 0;">🕸 Getting Started</h2>
+          </div>
+          <div class="documentation-text">
+            <h3>Try my software!</h3>
+            <p>
+              I spent a lot of time writing this software, so if you don't
+              understand and appreciate it, you have de facto wasted my time. My
+              software is simple, intuitive, and delightful.
+            </p>
+            <h3>Learn my software.</h3>
+            <p>
+              Now that I have won you over, you will be amazed by how easy my
+              features are to use and install. Simply open your terminal and
+              run:
+            </p>
+            <code>$ npm install fantastic-virus</code>
+            <p>
+              and voila! You can now use your computer as a tiny space heater
+              while I mine bitcoin with it.
+            </p>
+            <h3>Join my software community.</h3>
+            <p>
+              There are lots of other people just like you who will
+              misunderstand these instructions and submit bug reports that I
+              will close unfixed. Join the conversation on
+              <a href="https://www.youtube.com/watch?v=2Q_ZzBGPdqE">DONC</a>,
+              <a href="https://www.youtube.com/watch?v=2Q_ZzBGPdqE">HashFlex</a>
+              and
+              <a href="https://www.youtube.com/watch?v=2Q_ZzBGPdqE">Rabbit</a>.
+            </p>
+            <button onclick="translateDocumentation()">Translate page</button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        A tree has a branching structure, no node that contains itself, directly
+        or indirecty, and a single root node.
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function initiateCurse() {
+      var h = document.createElement("H1");
+      const warning = document.createTextNode("Jillian! Why didnt you listen?");
+      h.appendChild(warning);
+      docTitle = document.body.getElementsByTagName("h1")[0];
+      docTitle.parentNode.replaceChild(h, docTitle);
+
+      let text = document.createTextNode("Jillian, I told you not to click!");
+      const items = document.body.getElementsByClassName("grid-item");
+      for (let i = items.length - 1; i >= 0; i--) {
+        let item = items[i];
+        let noun = i == 0 ? "time" : "times";
+        const text = document.createTextNode(
+          `You have been cursed ${i + 1} ${noun}!`
+        );
+        item.parentNode.replaceChild(text, item);
+      }
+    }
+
+    function translateDocumentation() {
+      const documentContents = document.body.getElementsByClassName(
+        "documentation"
+      );
+      const textElements = documentContents[0].getElementsByTagName("p");
+      const translateDict = {
+        simple: "poorly documented",
+        intuitive: "confusing",
+        delightful: "tedious",
+        easy: "impossible to debug",
+        "join the conversation": "rely on the kindness of strangers",
+      };
+      for (let text of textElements) {
+        const correctedText = text.innerText
+          .split(" ")
+          .map((word) => {
+            let unpunctuated = word.match(/[^_\W]+/g);
+            if (translateDict[unpunctuated])
+              return word.replace(unpunctuated, translateDict[unpunctuated]);
+            else return word;
+          })
+          .join(" ");
+        console.log(correctedText);
+        const correctedTextNode = document.createTextNode(correctedText);
+        console.log(correctedTextNode);
+        text.parentNode.replaceChild(correctedTextNode, text);
+        // console.log(correctedText);
+      }
+    }
+  </script>
+
+  <script src="mona_lisa.js"></script>
+</html>

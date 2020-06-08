@@ -1,0 +1,85 @@
+body {
+  position: relative;
+  max-width: 840px;
+  margin: auto;
+  padding: 2.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji";
+}
+h1 {
+  font-family: "Sacramento", -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica, Arial, cursive, "Apple Color Emoji";
+  text-align: center;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.grid-wrapper > .grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.button-moving {
+  background-color: blue;
+  color: #fff;
+  border: 2.5px solid blue;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  transition-property: color, background-color, box-shadow;
+  max-height: 50px;
+}
+.button-moving:hover,
+.button-moving:active {
+  box-shadow: -10px 10px blue;
+  color: red;
+  background-color: yellow;
+}
+.button-moving h4 {
+  margin: 0.75em;
+}
+
+.slipKnot-terminal {
+  background-color: #141414;
+  color: #fff;
+  text-align: center;
+  font-family: monospace;
+  font-size: 0.5em;
+  padding: 0.75em;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.columns ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px 3px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+.documentation {
+  background-color: #e0e0e0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, He;
+  font-weight: 300;
+}
+
+.documentation .documentation-text {
+  padding: 0 0.75em 1.5em 0.75em;
+}
