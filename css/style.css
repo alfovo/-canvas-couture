@@ -1,6 +1,6 @@
 body {
   position: relative;
-  max-width: 840px;
+  max-width: 700px;
   margin: auto;
   padding: 2.5rem;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial,
@@ -9,12 +9,12 @@ body {
 h1 {
   font-family: "Sacramento", -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica, Arial, cursive, "Apple Color Emoji";
-  text-align: center;
 }
 
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  padding-top: 1rem;
 }
 
 .grid-wrapper > .grid-item {
@@ -73,13 +73,55 @@ a {
   color: inherit;
 }
 
-.documentation {
+#documentation {
   background-color: #e0e0e0;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, He;
+  font-size: 0.8em;
   font-weight: 300;
+  margin: 0.75rem 0;
 }
 
-.documentation .documentation-text {
+#documentation-text {
   padding: 0 0.75em 1.5em 0.75em;
+}
+
+#documentation-title {
+  background-color: #20232a;
+  color: white;
+  padding: 1em;
+  letter-spacing: 0.15em;
+}
+
+#key-play {
+  border: dashed red;
+  padding: 1em;
+}
+
+.stats-bar {
+  font-family: monospace;
+  font-size: 1em;
+  border-bottom: 1px solid blue;
+}
+
+@media screen and (min-width: 1200px) {
+  .stats-bar {
+    position: fixed;
+    padding: 0 0 1rem 1.5rem;
+    top: 50px;
+    right: 50%;
+    margin-right: 370px;
+    border-bottom: none;
+    width: 203px;
+  }
+}
+
+#progress {
+  border-bottom: 4px solid blue;
+  width: 0;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
 }
